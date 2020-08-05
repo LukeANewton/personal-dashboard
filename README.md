@@ -1,3 +1,3 @@
 #### Dashboard
 
-[![Build Status](https://travis-ci.org/LukeANewton/dashboard.svg?branch=master)](https://travis-ci.org/LukeANewton/dashboard)
+[![Build Status](https://travis-ci.com/LukeANewton/personal-dashboard.svg?branch=master)](https://travis-ci.com/LukeANewton/personal-dashboard)
