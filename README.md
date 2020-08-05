@@ -5,7 +5,7 @@ An application to coalesce internet content of interest.
 
 ## Built With
 - [React](https://reactjs.org/) - JavaScript framework for front end
-- [Express](https://expressjs.com/) - JavaScript (Node) framework for backend
+- [Express](https://expressjs.com/) - JavaScript (Node) framework for back end
 - [Travis CI](https://docs.travis-ci.com/) - Continuous Integration service
 - [Heroku](https://devcenter.heroku.com/) - Cloud service to host application
 
