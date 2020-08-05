@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: heroku
+  app: "dashboard-for-stuff"
+  api_key:
+    secure: "aoE4/XNBbks5xy//ZiC7hLYrmOqvNIHj8OeeljWfvS7xOMAzZNr3riyKLFIlGdoyvqHoBkV+4OqgLafhbzcLAYwvGNGa0vEAg2XvTegmuQLAe+7c4fW/Hm7YHEM/hmjwwMTTMV1x0qsrDpG9186lvitoHVN6yWXYAcK2PW+TK/oi+lExr5CPKYRYDiVGRfxgKh0ttwegvfPcQT2evXAUBHGJjsY0yVq7XdFca59lD8qqYaJq1qv7JV8lVflpL0kCSFmfkFVvAhwBs0qVCRb3zoUCl4YhbWzfoMLv0aaizG9EkprwvahMz/GtwCf0I1Eno0hOftUFQ2z7OtHLfU7ZJoVlewaeiNsbkZMJDc9W+LW8NpT0qG2zhzDxhvj7EpxFz+Ne9qoqGkiheimL2ODbPFVImlA2LP882QircjT3S0QTb16Ht99l+TxobZd365FRWRSLg4XccXaasFpSq+o298+VzpD/leYWr9gSlwY9CTOu3pc69N5hfq/WM8A61x4bSGRun1X3cLA8FfiieSN020PGadblLAVOhtUVklN88h5+/VucX5BBgMZqc7KprhDwHU74ynEft8+RG1H7ovXQ1eptdBLlQYqw6cF5ba21/w56B/hzsypolo1BOgBv/9qwGJtw9Cl3NkEnrf2botQiTNG3ouDf+PfPTWRpSjPaBAk="
+  skip_cleanup: true
+on:
+  branch: master
+  
