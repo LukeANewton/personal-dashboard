@@ -10,7 +10,7 @@ script:
   - cd ../..
   - npm install
   - rsync -a ./Client/app1/build .
-  - ls
+  - rm -rf ./Client/app1/build/*
 deploy:
   provider: heroku
   app: "dashboard-for-stuff"
