@@ -9,6 +9,7 @@ script:
   - npm run build
   - cd ../..
   - npm install
+  - npm install cors
   - rsync -a ./Client/app1/build .
   - rm -rf ./Client/app1/build/*
 deploy:
