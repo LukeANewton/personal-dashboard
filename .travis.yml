@@ -9,7 +9,7 @@ script:
   - npm run build
   - cd ../..
   - npm install
-  - mv ./Client/app1/build .
+  rsync -a ./Client/app1/build .
 deploy:
   provider: heroku
   app: "dashboard-for-stuff"
