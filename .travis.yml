@@ -1,12 +1,21 @@
 language: node_js
 node_js:
   - "stable"
+os: linux
 cache:
   directories:
     - node_modules
 script:
   - npm test
   - npm run build
+before deploy:
+  - nvm install node
+  - cd ./app1/Client
+  - npm install
+  - npm run build
+  - cd ..
+  - npm install
+  - mv ./Client/app1/build .
 deploy:
   provider: heroku
   app: "dashboard-for-stuff"
