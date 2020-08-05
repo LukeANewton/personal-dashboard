@@ -1,2 +1,5 @@
 node_modules/
+build/
+
 Client/app1/node_modules/
+Client/app1/build/
