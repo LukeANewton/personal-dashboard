@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "stable"
 os: linux
-before deploy:
+script:
   - nvm install node
   - cd ./app1/Client
   - npm install
