@@ -4,7 +4,7 @@ node_js:
 os: linux
 script:
   - nvm install node
-  - cd ./app1/Client
+  - cd ./Client/app1
   - npm install
   - npm run build
   - cd ..
