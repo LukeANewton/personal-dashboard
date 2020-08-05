@@ -5,10 +5,9 @@ os: linux
 script:
   - nvm install node
   - cd ./Client/app1
-  - ls
   - npm install
   - npm run build
-  - cd ..
+  - cd ../..
   - npm install
   - mv ./Client/app1/build .
 deploy:
