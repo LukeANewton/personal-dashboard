@@ -4,7 +4,7 @@
 A web application to coalesce internet content of interest. It can be found [here](https://dashboard-for-stuff.herokuapp.com/).
 
 ## Built With
-- [React](https://reactjs.org/) - JavaScript framework for front end
+- [React](https://reactjs.org/) - JavaScript library for front end
 - [Express](https://expressjs.com/) - JavaScript (Node) framework for back end
 - [Travis CI](https://docs.travis-ci.com/) - Continuous Integration service
 - [Heroku](https://devcenter.heroku.com/) - Cloud service to host application
