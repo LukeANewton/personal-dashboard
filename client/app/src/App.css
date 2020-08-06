@@ -1,12 +1,14 @@
 .App {
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: #d1d1d1;
 }
 
 .Border-Bar {
-  background-color: #2f3236;
+  background-color: #1f1f1f;
+  border-bottom: ridge;
+  border-color: #1f1f1f;
 }
 
 .App-Content {
-  background-color: #1c1f24;
+  background-color: #121212;
 }

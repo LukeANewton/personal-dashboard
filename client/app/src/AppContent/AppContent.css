@@ -1,0 +1,6 @@
+.App-Content {
+  height: 100%;
+  padding: 20px;
+  margin-left: 160px; /* Same as the width of the sidebar */
+  font-size: 15px;
+}
