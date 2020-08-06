@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import AppHeader from './AppHeader/AppHeader.js';
+import AppSidebar from './AppSidebar/AppSidebar.js';
 
 class App extends Component{
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component{
     return (
       <div className="App">
         <AppHeader />
+        <AppSidebar />
         <p className="App-intro"> yo: {this.state.apiResponse}</p>
       </div>
     );
