@@ -3,6 +3,7 @@ import './App.css';
 import AppHeader from './AppHeader/AppHeader.js';
 import AppSidebar from './AppSidebar/AppSidebar.js';
 import AppContent from './AppContent/AppContent.js';
+import RequestManager from './RequestManager.js';
 
 class App extends Component{
   constructor(props) {
@@ -10,14 +11,9 @@ class App extends Component{
     this.state = { apiResponse: "" };
   }
 
-  callAPI() {
-    fetch("/api/testAPI")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
-  }
-
   componentDidMount() {
-    this.callAPI();
+    RequestManager.requestText("/api/testAPI")
+        .then(res => this.setState({ apiResponse: res }));
   }
 
   render() {
