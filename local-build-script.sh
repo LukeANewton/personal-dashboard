@@ -1,11 +1,11 @@
 #!/bin/bash
 
-cd Client/app1
+cd client/app
 npm install
 npm run build
 cd ../..
 npm install
 npm install cors
 rm -r build
-cp -r Client/app1/build/ build
+cp -r client/app/build/ build
 npm start

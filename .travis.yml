@@ -4,14 +4,14 @@ node_js:
 os: linux
 script:
   - nvm install node
-  - cd ./Client/app1
+  - cd ./client/app
   - npm install
   - npm run build
   - cd ../..
   - npm install
   - npm install cors
-  - rsync -a ./Client/app1/build .
-  - rm -rf ./Client/app1/build/*
+  - rsync -a ./client/app/build .
+  - rm -rf ./client/app/build/*
 deploy:
   provider: heroku
   app: "dashboard-for-stuff"
