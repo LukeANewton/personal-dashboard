@@ -13,3 +13,8 @@ button {
 button:hover {
     color: #d1d1d1;
 }
+
+/* styling when clicked */
+button:focus{
+    outline: none;
+}
