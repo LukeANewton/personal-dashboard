@@ -1,7 +1,7 @@
 # Dashboard
 [![Build Status](https://travis-ci.com/LukeANewton/personal-dashboard.svg?branch=master)](https://travis-ci.com/LukeANewton/personal-dashboard)
 
-A web application to coalesce internet content of interest. It can be found [here](https://dashboard-for-stuff.herokuapp.com/).
+A web application to collect internet content of interest. It can be found [here](https://dashboard-for-stuff.herokuapp.com/).
 
 ## Built With
 - [React](https://reactjs.org/) - JavaScript library for front end
