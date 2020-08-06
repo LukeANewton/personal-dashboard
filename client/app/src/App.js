@@ -24,7 +24,9 @@ class App extends Component{
       <div className="App">
         <AppHeader />
         <AppSidebar />
-        <p className="App-intro"> yo: {this.state.apiResponse}</p>
+        <div className="App-Content">
+          <p className="App-intro"> yo: {this.state.apiResponse}</p>
+        </div>
       </div>
     );
   }
