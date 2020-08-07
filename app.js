@@ -8,7 +8,7 @@ var cors = require("cors")
 
 //define known routes here
 var router = {"/api/testAPI": require("./routes/testAPI"),
-  "/api/reddit/popular": require("./routes/Reddit/Popular-Feed")};
+  "/api/reddit": require("./routes/reddit")};
 
 var app = express();
 

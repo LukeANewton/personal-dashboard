@@ -1,0 +1,7 @@
+.left-to-right-bar * {
+  display: inline;
+  font-size: 15px;
+  margin: 5px;
+  color: #d1d1d1;
+  background-color: #121212;
+}

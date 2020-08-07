@@ -8,10 +8,10 @@ class AppSidebar extends Component{
   render() {
     return (
       <div id="App-Sidebar" className="Border-Bar">
-        <SidebarLink text='Reddit' clickAction = {RedditManager.getPopularPosts} />
-        <SidebarLink text='Example 2' clickAction= {console.log("test")} />
-        <SidebarLink text='Example 3' clickAction= {console.log("test")} />
-        <SidebarLink text='Example 4' clickAction= {console.log("test")} />
+        <SidebarLink text='Reddit' clickAction={() => {RedditManager.getPosts()}} />
+        <SidebarLink text='Example 2' clickAction={() => {console.log("test")}} />
+        <SidebarLink text='Example 3' clickAction={() => {console.log("test")}} />
+        <SidebarLink text='Example 4' clickAction={() => {console.log("test")}} />
       </div>
     );
   }

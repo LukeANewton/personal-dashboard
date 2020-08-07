@@ -22,6 +22,8 @@
 
 .Reddit-Article h3 {
   margin-bottom: 5px;
+  width: 50%;
+  text-align: left;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -40,4 +42,8 @@
   margin-bottom: 18px;
   display: none;
   overflow: hidden;
+}
+
+.Reddit-Article img {
+  max-width: 100%;
 }

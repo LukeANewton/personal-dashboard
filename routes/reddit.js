@@ -3,8 +3,13 @@ var router = express.Router();
 var fetch = require('node-fetch')
 
 router.get("/", async function(req, res, next) {
+    //get query parameters
+    var limit = req.query.limit;
+    var filter = req.query.filter;
+    var subreddit = req.query.subreddit;
+
     //fetch reddit posts
-    var posts = await fetch("http://reddit.com/r/all/hot/.json?limit=100", {
+    var posts = await fetch('http://reddit.com/r/'.concat(subreddit, '/', filter, '/.json?limit=', limit), {
         method  : 'GET', 
         headers : {
             //reddit throttles requests without custom user-agent strings
