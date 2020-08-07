@@ -1,7 +1,9 @@
+import { trackPromise } from 'react-promise-tracker';
+
 class RequestManager{
 
     static request(URLString, options = {method: 'GET'}){
-        return fetch(URLString, options);
+        return trackPromise(fetch(URLString, options));
     }
 
     static async requestText(URLString, options = {method: 'GET'}){

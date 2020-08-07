@@ -3,6 +3,8 @@
 cd client/app
 npm install
 npm install remove-markdown
+npm install react-promise-tracker
+npm install react-loader-spinner
 npm run build
 cd ../..
 npm install
