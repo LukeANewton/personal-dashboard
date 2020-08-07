@@ -3,9 +3,8 @@ var router = express.Router();
 var fetch = require('node-fetch')
 
 router.get("/", async function(req, res, next) {
-
     //fetch reddit posts
-    var posts = await fetch("http://reddit.com/r/all/hot/.json?count=20", {
+    var posts = await fetch("http://reddit.com/r/all/hot/.json?limit=100", {
         method  : 'GET', 
         headers : {
             //reddit throttles requests without custom user-agent strings
@@ -22,6 +21,7 @@ router.get("/", async function(req, res, next) {
             subredditLink: "http://reddit.com/r/".concat(element.data.subreddit),
             postLink: "http://reddit.com".concat(element.data.permalink),
             title: element.data.title,
+            text: element.data.selftext,
             url: element.data.url
         });
     });

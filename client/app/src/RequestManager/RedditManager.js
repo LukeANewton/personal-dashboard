@@ -13,7 +13,7 @@ class RedditManager extends RequestManager{
         jsonData.forEach(element => {
             elements.push(
                 <RedditArticle title={element.title} subreddit={element.subreddit} subredditLink={element.subredditLink} 
-                    postLink={element.postLink} contentLink={element.url} />
+                    postLink={element.postLink} contentLink={element.url} text={element.text}/>
             )
         });
 

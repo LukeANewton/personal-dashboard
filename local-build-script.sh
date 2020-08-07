@@ -2,6 +2,7 @@
 
 cd client/app
 npm install
+npm install remove-markdown
 npm run build
 cd ../..
 npm install
