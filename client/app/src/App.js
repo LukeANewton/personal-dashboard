@@ -3,7 +3,7 @@ import './App.css';
 import AppHeader from './AppHeader/AppHeader.js';
 import AppSidebar from './AppSidebar/AppSidebar.js';
 import AppContent from './AppContent/AppContent.js';
-import RequestManager from './RequestManager.js';
+import RequestManager from './RequestManager/RequestManager.js';
 
 class App extends Component{
   constructor(props) {

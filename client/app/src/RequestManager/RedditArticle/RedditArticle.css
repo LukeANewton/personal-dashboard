@@ -1,0 +1,25 @@
+.Reddit-Article {
+  padding: 10px;
+  padding-left: 20px;
+  width: 80%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.Reddit-Article a:hover {
+  color: #e1e1e1;
+  text-decoration: underline;
+}
+
+/* styling when clicked */
+.Reddit-Article a, a:visited, a:active{
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.Reddit-Article p {
+  margin: 0px;
+}
+
+.Reddit-Article h3 {
+  margin-bottom: 5px;
+}

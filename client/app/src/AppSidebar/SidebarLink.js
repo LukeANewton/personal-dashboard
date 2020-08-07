@@ -4,16 +4,16 @@ import './SidebarLink.css';
 class SidebarLink extends Component{
     constructor(props) {
       super(props);
-      this.state = { text: 'link' };
+      this.state = { text: 'link', clickAction: function(){} };
     }
   
     static getDerivedStateFromProps(props, state) {
-        return {text: props.text };
+        return {text: props.text,  clickAction: props.clickAction};
     }
   
     render() {
       return (
-        <button>{this.state.text}</button>
+        <button onClick={this.state.clickAction}>{this.state.text}</button>
       );
     }
   }

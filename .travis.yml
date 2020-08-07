@@ -10,6 +10,8 @@ script:
   - cd ../..
   - npm install
   - npm install cors
+  - npm i node-fetch express-async-await
+  - npm install express-useragent
   - rsync -a ./client/app/build .
   - rm -rf ./client/app/build/*
 deploy:
