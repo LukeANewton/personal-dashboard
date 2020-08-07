@@ -41,7 +41,7 @@ class RedditArticle extends Component{
     if(this.state.text !== ''){
       return this.buildCollapsable('Show Text', <p>{removeMd(this.state.text)}</p>);
     } else if(this.isImage(this.state.contentLink)){
-      return this.buildCollapsable('Show Image', <img src={this.state.contentLink}/>);
+      return this.buildCollapsable('Show Image', <img src={this.state.contentLink} alt={this.state.contentLink}/>);
     } 
   }
 
